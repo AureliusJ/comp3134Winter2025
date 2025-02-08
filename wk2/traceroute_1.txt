@@ -1,0 +1,4 @@
+root@comp3134-Winter2025:~# traceroute google.com
+traceroute to google.com (142.251.33.174), 30 hops max, 60 byte packets
+ 1  162.243.190.9 (162.243.190.9)  2.861 ms  2.250 ms 162.243.190.5 (162.243.190.5)  2.233 ms
+ 2  143.244.192.138 (143.244.192.138)  2.929 ms^C

@@ -1,0 +1,14 @@
+root@comp3134-Winter2025:~# ping 68.183.207.237
+PING 68.183.207.237 (68.183.207.237) 56(84) bytes of data.
+64 bytes from 68.183.207.237: icmp_seq=1 ttl=64 time=0.038 ms
+64 bytes from 68.183.207.237: icmp_seq=2 ttl=64 time=0.062 ms
+64 bytes from 68.183.207.237: icmp_seq=3 ttl=64 time=0.054 ms
+64 bytes from 68.183.207.237: icmp_seq=4 ttl=64 time=0.053 ms
+64 bytes from 68.183.207.237: icmp_seq=5 ttl=64 time=0.053 ms
+64 bytes from 68.183.207.237: icmp_seq=6 ttl=64 time=0.051 ms
+64 bytes from 68.183.207.237: icmp_seq=7 ttl=64 time=0.051 ms
+64 bytes from 68.183.207.237: icmp_seq=8 ttl=64 time=0.058 ms
+^C
+--- 68.183.207.237 ping statistics ---
+8 packets transmitted, 8 received, 0% packet loss, time 7155ms
+rtt min/avg/max/mdev = 0.038/0.052/0.062/0.006 ms
