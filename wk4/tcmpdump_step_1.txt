@@ -1,0 +1,75 @@
+root@comp3134-Winter2025:~# tcpdump -i eth0
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+01:53:50.865663 IP comp3134-Winter2025.ssh > 142.189.208.5.63451: Flags [P.], seq 337215479:337215587, ack 1815881041, win 501, length 108
+01:53:50.865733 IP comp3134-Winter2025.ssh > 142.189.208.5.63451: Flags [P.], seq 108:144, ack 1, win 501, length 36
+01:53:50.865775 IP comp3134-Winter2025.ssh > 142.189.208.5.63451: Flags [P.], seq 144:196, ack 1, win 501, length 52
+01:53:50.865815 IP comp3134-Winter2025.ssh > 142.189.208.5.63451: Flags [P.], seq 196:264, ack 1, win 501, length 68
+01:53:50.865854 IP comp3134-Winter2025.ssh > 142.189.208.5.63451: Flags [P.], seq 264:332, ack 1, win 501, length 68
+01:53:50.865889 IP comp3134-Winter2025.ssh > 142.189.208.5.63451: Flags [P.], seq 332:368, ack 1, win 501, length 36
+01:53:50.874425 IP 142.189.208.5.63451 > comp3134-Winter2025.ssh: Flags [.], ack 108, win 1024, length 0
+01:53:50.874425 IP 142.189.208.5.63451 > comp3134-Winter2025.ssh: Flags [.], ack 368, win 1023, length 0
+01:53:50.963773 IP comp3134-Winter2025.40202 > 67.207.67.2.domain: 55522+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.963880 IP comp3134-Winter2025.49853 > 67.207.67.2.domain: 49158+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.963935 IP comp3134-Winter2025.48012 > 67.207.67.3.domain: Flags [S], seq 2335058596, win 64240, options [mss 1460,sackOK,TS val 2499459804 ecr 0,nop,wscale 7,tfo  cookiereq,nop,nop], length 0
+01:53:50.966292 IP 67.207.67.2.domain > comp3134-Winter2025.40202: 55522 ServFail 0/0/1 (55)
+01:53:50.966293 IP 67.207.67.2.domain > comp3134-Winter2025.49853: 49158 ServFail 0/0/1 (55)
+01:53:50.966503 IP comp3134-Winter2025.40202 > 67.207.67.2.domain: 55522+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.966538 IP comp3134-Winter2025.49853 > 67.207.67.2.domain: 49158+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.966780 IP 67.207.67.3.domain > comp3134-Winter2025.48012: Flags [S.], seq 1692783468, ack 2335058597, win 65160, options [mss 1460,sackOK,TS val 358112747 ecr 2499459804,nop,wscale 9], length 0
+01:53:50.966839 IP comp3134-Winter2025.48012 > 67.207.67.3.domain: Flags [.], ack 1, win 502, options [nop,nop,TS val 2499459807 ecr 358112747], length 0
+01:53:50.966895 IP comp3134-Winter2025.48012 > 67.207.67.3.domain: Flags [P.], seq 1:47, ack 1, win 502, options [nop,nop,TS val 2499459807 ecr 358112747], length 46 31698+ PTR? 5.208.189.142.in-addr.arpa. (44)
+01:53:50.967784 IP 67.207.67.2.domain > comp3134-Winter2025.49853: 49158 ServFail 0/0/1 (55)
+01:53:50.967822 IP 67.207.67.2.domain > comp3134-Winter2025.40202: 55522 ServFail 0/0/1 (55)
+01:53:50.967891 IP comp3134-Winter2025.49853 > 67.207.67.2.domain: 49158+ PTR? 5.208.189.142.in-addr.arpa. (44)
+01:53:50.968030 IP comp3134-Winter2025.40202 > 67.207.67.2.domain: 55522+ PTR? 5.208.189.142.in-addr.arpa. (44)
+01:53:50.968301 IP 67.207.67.3.domain > comp3134-Winter2025.48012: Flags [.], ack 47, win 128, options [nop,nop,TS val 358112749 ecr 2499459807], length 0
+01:53:50.968425 IP 67.207.67.3.domain > comp3134-Winter2025.48012: Flags [P.], seq 1:47, ack 47, win 128, options [nop,nop,TS val 358112749 ecr 2499459807], length 46 31698 ServFail 0/0/0 (44)
+01:53:50.968437 IP comp3134-Winter2025.48012 > 67.207.67.3.domain: Flags [.], ack 47, win 502, options [nop,nop,TS val 2499459809 ecr 358112749], length 0
+01:53:50.969079 IP 67.207.67.2.domain > comp3134-Winter2025.49853: 49158 ServFail 0/0/0 (44)
+01:53:50.969324 IP comp3134-Winter2025.44488 > 67.207.67.3.domain: 49158+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.969392 IP 67.207.67.2.domain > comp3134-Winter2025.40202: 55522 ServFail 0/0/0 (44)
+01:53:50.969712 IP comp3134-Winter2025.58176 > 67.207.67.3.domain: 55522+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.970400 IP 67.207.67.3.domain > comp3134-Winter2025.44488: 49158 ServFail 0/0/1 (55)
+01:53:50.970449 IP comp3134-Winter2025.44488 > 67.207.67.3.domain: 49158+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.971083 IP 67.207.67.3.domain > comp3134-Winter2025.58176: 55522 ServFail 0/0/1 (55)
+01:53:50.971207 IP comp3134-Winter2025.58176 > 67.207.67.3.domain: 55522+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.971504 IP 67.207.67.3.domain > comp3134-Winter2025.44488: 49158 ServFail 0/0/1 (55)
+01:53:50.971541 IP comp3134-Winter2025.44488 > 67.207.67.3.domain: 49158+ PTR? 5.208.189.142.in-addr.arpa. (44)
+01:53:50.972420 IP 67.207.67.3.domain > comp3134-Winter2025.58176: 55522 ServFail 0/0/1 (55)
+01:53:50.972571 IP comp3134-Winter2025.58176 > 67.207.67.3.domain: 55522+ PTR? 5.208.189.142.in-addr.arpa. (44)
+01:53:50.972662 IP 67.207.67.3.domain > comp3134-Winter2025.44488: 49158 ServFail 0/0/0 (44)
+01:53:50.973824 IP 67.207.67.3.domain > comp3134-Winter2025.58176: 55522 ServFail 0/0/0 (44)
+01:53:50.974352 IP comp3134-Winter2025.43069 > 67.207.67.3.domain: 22511+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.974452 IP comp3134-Winter2025.46333 > 67.207.67.3.domain: 46856+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.975762 IP 67.207.67.3.domain > comp3134-Winter2025.43069: 22511 ServFail 0/0/1 (55)
+01:53:50.975762 IP 67.207.67.3.domain > comp3134-Winter2025.46333: 46856 ServFail 0/0/1 (55)
+01:53:50.975929 IP comp3134-Winter2025.43069 > 67.207.67.3.domain: 22511+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.975955 IP comp3134-Winter2025.46333 > 67.207.67.3.domain: 46856+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.977319 IP 67.207.67.3.domain > comp3134-Winter2025.43069: 22511 ServFail 0/0/1 (55)
+01:53:50.977319 IP 67.207.67.3.domain > comp3134-Winter2025.46333: 46856 ServFail 0/0/1 (55)
+01:53:50.977494 IP comp3134-Winter2025.43069 > 67.207.67.3.domain: 22511+ PTR? 5.208.189.142.in-addr.arpa. (44)
+01:53:50.977547 IP comp3134-Winter2025.46333 > 67.207.67.3.domain: 46856+ PTR? 5.208.189.142.in-addr.arpa. (44)
+01:53:50.978764 IP 67.207.67.3.domain > comp3134-Winter2025.46333: 46856 ServFail 0/0/0 (44)
+01:53:50.978764 IP 67.207.67.3.domain > comp3134-Winter2025.43069: 22511 ServFail 0/0/0 (44)
+01:53:50.978945 IP comp3134-Winter2025.38220 > 67.207.67.2.domain: 46856+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.979696 IP comp3134-Winter2025.52018 > 67.207.67.2.domain: 22511+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.980224 IP 67.207.67.2.domain > comp3134-Winter2025.38220: 46856 ServFail 0/0/1 (55)
+01:53:50.980313 IP comp3134-Winter2025.38220 > 67.207.67.2.domain: 46856+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.980796 IP 67.207.67.2.domain > comp3134-Winter2025.52018: 22511 ServFail 0/0/1 (55)
+01:53:50.980937 IP comp3134-Winter2025.52018 > 67.207.67.2.domain: 22511+ [1au] PTR? 5.208.189.142.in-addr.arpa. (55)
+01:53:50.981387 IP 67.207.67.2.domain > comp3134-Winter2025.38220: 46856 ServFail 0/0/1 (55)
+01:53:50.981447 IP comp3134-Winter2025.38220 > 67.207.67.2.domain: 46856+ PTR? 5.208.189.142.in-addr.arpa. (44)
+01:53:50.981977 IP 67.207.67.2.domain > comp3134-Winter2025.52018: 22511 ServFail 0/0/1 (55)
+01:53:50.982099 IP comp3134-Winter2025.52018 > 67.207.67.2.domain: 22511+ PTR? 5.208.189.142.in-addr.arpa. (44)
+01:53:50.982550 IP 67.207.67.2.domain > comp3134-Winter2025.38220: 46856 ServFail 0/0/0 (44)
+01:53:50.983330 IP 67.207.67.2.domain > comp3134-Winter2025.52018: 22511 ServFail 0/0/0 (44)
+01:53:51.251351 IP 172-232-121-108.ip.linodeusercontent.com > comp3134-Winter2025: ICMP echo request, id 50888, seq 0, length 14
+01:53:51.251421 IP comp3134-Winter2025 > 172-232-121-108.ip.linodeusercontent.com: ICMP echo reply, id 50888, seq 0, length 14
+01:53:51.271185 IP 47.251.86.118.31311 > comp3134-Winter2025.5683: UDP, length 8
+^C
+01:53:52.747422 IP 175.153.167.179 > comp3134-Winter2025: ICMP echo request, id 11521, seq 18547, length 16
+
+67 packets captured
+159 packets received by filter
+21 packets dropped by kernel

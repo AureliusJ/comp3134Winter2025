@@ -1,0 +1,11 @@
+root@comp3134-Winter2025:~# tcpdump -A -i eth0
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+^C01:58:37.998894 IP comp3134-Winter2025.ssh > 142.189.208.5.63451: Flags [P.], seq 418494235:418494343, ack 1815924225, win 501, length 108
+E.....@.@.!]D...............l<..P...s...N..XdN..5       ..7L.a......7Q.R8..........k..}[...7.".Jp...C.....-f..H..
+SH.w......p.O4F..aeQ..4&....4..Nv....K.
+
+
+1 packet captured
+72 packets received by filter
+0 packets dropped by kernel
